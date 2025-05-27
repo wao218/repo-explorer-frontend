@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { jwtDecode } from 'jwt-decode';
+import RepoSearch from './RepoSearch';
 
 export default function HomePage() {
   const router = useRouter();
@@ -30,6 +31,7 @@ export default function HomePage() {
   return (
     <div className='p-6'>
       <h1 className='text-2xl font-bold'>Welcome to Repo Explorer!</h1>
+      <RepoSearch />
     </div>
   );
 }
