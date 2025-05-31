@@ -1,4 +1,3 @@
-// store/useUserStore.js
 import { useState } from 'react';
 import { fetchReposByUsername } from '../services/repoService';
 import { Repo } from '../types/repo';
